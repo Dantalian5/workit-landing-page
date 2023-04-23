@@ -1,0 +1,19 @@
+// Claculate fluid Font Algorithm:
+// mathematical ecuation of a line:
+// y2-y1 = m(x2-x1)
+
+// Screen Variables
+$screen-min: 23.4375rem;
+$screen-max: 90rem;
+// -----------------
+
+
+@function fluid-size-vw ($y1, $y2, $x1: $screen-min, $x2: $screen-max){
+   $deltay : calc($y2 - $y1);
+   $deltax : calc($x2 - $x1);
+   $m : calc($deltay / $deltax);
+   $f-size: calc($m * (100vw - $x1) + $y1);
+   $fluid-size: clamp( $y1, $f-size, $y2);
+   @return $fluid-size;
+}
+

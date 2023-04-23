@@ -1,0 +1,37 @@
+//@ Import fonts
+@font-face {
+    font-family: "Fraunces";
+    src: url('../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('TrueType');
+    src: url('../assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('TrueType');
+  }
+@font-face {
+    font-family: "Manrope";
+    src: url('../assets/fonts/manrope/Manrope-VariableFont_wght.ttf') format('TrueType');
+    src: url('../assets/fonts/manrope/static/Manrope-Regular.ttf') format('TrueType');
+  }
+//Fonts:
+$ff-fraunces: 'Fraunces', serif;
+$ff-manrope: 'Manrope', sans-serif;
+// Colors:
+    // Primary
+    $c-dark-purple: hsl(273, 85%, 13%);
+    $c-davy-grey: hsl(271, 12%, 34%);
+    $c-eucaliptus: hsl(150, 100%, 63%);
+    $c-ghost-white: hsl(276, 100%, 99%);
+    // Neutral
+    $c-n-white: hsl(0,0%,100%);
+    $c-n-black: hsl(0,0%,0%);
+// Screen Variables
+    $screen-min: 23.4375rem;
+    $screen-max: 90rem;
+
+
+
+body{ 
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color: $c-n-white;    
+}
+
+
+

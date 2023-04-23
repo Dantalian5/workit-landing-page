@@ -1,0 +1,12 @@
+@media (hover:hover){
+    .btn:hover{
+        background-color: $c-dark-purple;
+        color: $c-eucaliptus;
+    }
+    .link:hover{
+        color: $c-eucaliptus;
+    }
+    .footer__social__a:hover{
+        color: $c-dark-purple;
+    }
+}
