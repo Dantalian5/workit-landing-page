@@ -74,6 +74,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    min-width: min-content;
     gap: 0 2rem;
     &__number{
         width: fit-content;
@@ -111,6 +112,7 @@
 .sctn-1{
     padding-top: 6.25rem;
     position: relative;
+    overflow-x: hidden;
     &::after{
         content: url(../assets/images/bg-pattern-3.svg);
         position: absolute;
@@ -180,7 +182,7 @@
     }
 }
 
-@media (min-width:46.875rem) and (max-width: 62.5rem){
+@media (min-width:46.875rem) and (max-width: 1200px){
     .sctn{ 
         align-items: end;
         width: 83%;

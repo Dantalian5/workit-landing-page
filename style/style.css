@@ -115,7 +115,7 @@ body {
     padding-inline: 5%;
   }
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 75rem) {
   .container {
     padding-inline: min(12%, 10.3125rem);
   }
@@ -201,6 +201,8 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  min-width: -moz-min-content;
+  min-width: min-content;
   gap: 0 2rem;
 }
 .sctn__number {
@@ -241,6 +243,7 @@ body {
 .sctn-1 {
   padding-top: 6.25rem;
   position: relative;
+  overflow-x: hidden;
 }
 .sctn-1::after {
   content: url(../assets/images/bg-pattern-3.svg);
@@ -312,7 +315,7 @@ body {
   color: hsl(271, 12%, 34%);
 }
 
-@media (min-width: 46.875rem) and (max-width: 62.5rem) {
+@media (min-width: 46.875rem) and (max-width: 1200px) {
   .sctn {
     align-items: end;
     width: 83%;
