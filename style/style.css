@@ -64,8 +64,7 @@ body {
   padding-block: clamp(2rem, 8%, 3.125rem);
   position: relative;
   background: no-repeat url(../assets/images/bg-pattern-1.svg), no-repeat url(../assets/images/bg-pattern-2.svg);
-  background-position-y: top 17.5%, top 45%;
-  background-position-x: right max(40.9375rem, 112.5%), left max(43.0625rem, 104%);
+  background-position: top 17.5% right max(40.9375rem, 112.5%), top 45% left max(43.0625rem, 104%);
 }
 .header::before {
   content: "";
@@ -243,7 +242,7 @@ body {
 .sctn-1 {
   padding-top: 6.25rem;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .sctn-1::after {
   content: url(../assets/images/bg-pattern-3.svg);

@@ -112,7 +112,7 @@
 .sctn-1{
     padding-top: 6.25rem;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     &::after{
         content: url(../assets/images/bg-pattern-3.svg);
         position: absolute;
